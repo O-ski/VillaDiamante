@@ -1,0 +1,358 @@
+.header-main {
+    background: #fff;
+
+    .container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        height: 54px;
+
+        // border-bottom: 1px solid #979aad;
+        transition: all 500ms ease-in-out;
+        background: #fff;
+
+        @media screen and (min-width: $medium) {
+            height: 95px;
+            border-bottom: 0;
+        }
+    }
+
+    .container-line::before {
+        content: "";
+        height: 1px;
+        width: calc(100% - 30px);
+        display: block;
+        background: #979aad;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+
+    &__nav {
+        //font-size: 0;
+        .open-menu {
+            padding: 0;
+            font-size: 0;
+            top: 3px;
+
+            @media screen and (min-width: $medium) {
+                padding-right: 48px;
+            }
+
+            .text {
+                display: none;
+
+                @media screen and (min-width: $medium) {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .nav {
+            display: block;
+            width: 300px;
+            transition: all 500ms ease-in-out;
+            background: #fff;
+            padding: 25px;
+            position: fixed;
+            left: -330px;
+            top: 0px;
+            z-index: 1;
+            box-shadow: 3px 0px 5px 1px rgba(0, 0, 0, 0.18);
+            height: 100vh;
+
+            @media screen and (min-width: $extra-large-desktop) {
+                width: 600px;
+                padding: 45px 84px;
+                height: auto;
+                top: 30px;
+                left: -630px;
+            }
+
+            @media screen and (max-height: 800px) {
+                height: 80vh;
+                overflow-y: auto;
+            }
+
+            .close-menu {
+                margin-bottom: 25px;
+
+                @media screen and (min-width: $extra-large-desktop) {
+                    margin-bottom: 80px;
+                }
+            }
+
+            &__list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                
+
+                li {
+                    display: block;
+                    margin-bottom: 8px;
+                    position: relative;
+
+                    @media screen and (min-width: $extra-large-desktop) {
+                        margin-bottom: 40px;
+                    }
+
+                    a {
+                        font-weight: 300;
+                        font-size: 1.6rem;
+                        text-transform: uppercase;
+
+                        @media screen and (min-width: $extra-large-desktop) {
+                            font-size: 3.6rem;
+                        }
+                    }
+
+                    &:hover {
+                        a {
+                            color: #9c4a32;
+                        }
+                    }
+                }
+                li:last-of-type{
+                    margin-bottom: 0;
+                }
+
+                li::before {
+                    content: "";
+                    width: 20px;
+                    height: 1px;
+                    background: #4c5172;
+                    display: inline-block;
+                    margin-right: 15px;
+                    top: -4px;
+                    position: relative;
+
+                    @media screen and (min-width: $extra-large-desktop) {
+                        width: 40px;
+                        top: -10px;
+                        margin-right: 25px;
+                    }
+                }
+
+                li:hover:before {
+                    background: #9c4a32;
+                }
+            }
+        }
+
+        .nav.pushmenu {
+            left: 0;
+        }
+    }
+
+    .logo-main {
+        margin-left: 15px;
+
+        @media screen and (min-width: $medium) {
+            position: absolute;
+
+            @include left-center;
+
+            margin-left: 0;
+        }
+
+        img {
+            width: 98px;
+
+            @media screen and (min-width: $medium) {
+                width: 129px;
+            }
+        }
+    }
+
+    &__social {
+        margin-left: auto;
+
+        a {
+            margin-right: 5px;
+            line-height: 1.5rem;
+
+            span::before {
+                font-size: 1.9rem;
+            }
+
+            &:hover {
+                color: #4c5172;
+            }
+        }
+
+        a:nth-child(1) {
+            span:before {
+                color: #7e88b5;
+            }
+        }
+
+        a:nth-child(2) {
+            span:before {
+                color: #934918;
+            }
+        }
+
+        a:nth-child(3) {
+            span:before {
+                font-size: 2.4rem;
+                top: 2px;
+                margin-left: 3px;
+                color: #ba6969;
+            }
+        }
+
+        .social-phone {
+            display: none;
+            margin-right: 0;
+
+            @media screen and (min-width: $medium) {
+                display: inline-block;
+                top: -2px;
+                position: relative;
+            }
+
+            span:before {
+                margin-right: 12px;
+                top: 3px;
+                font-size: 1.7rem;
+            }
+
+            margin-left: 20px;
+        }
+    }
+}
+
+.entry-text {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+
+    @media screen and (min-width: $medium) {
+        width: calc(100% - 20%);
+    }
+
+    @media screen and (min-width: $large) {
+        margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: $extra-large-desktop) {
+        width: calc(100% - 40%);
+    }
+
+    @media screen and (min-width: $extra-large-desktop-2) {
+        width: calc(100% - 60%);
+    }
+
+    hgroup {
+        padding: 0;
+    }
+
+    &__heading {
+        margin: 0 auto;
+        color: #fff;
+        background: #4c5172;
+        padding: 26px 21px;
+        text-align: center;
+        font-size: 2.9rem;
+        margin-top: -36px;
+        z-index: 1;
+        position: relative;
+        font-family: $font-2;
+
+        @media screen and (min-width: $medium) {
+            font-size: 6rem;
+        }
+
+        @media screen and (min-width: $extra-large-desktop) {
+            margin-top: -78px;
+        }
+    }
+
+    &__small-heading {
+        margin: 16px auto 0;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        text-align: center;
+
+        @media screen and (min-width: $medium) {
+            font-size: 2.6rem;
+            margin-top: 32px;
+        }
+
+        @media screen and (min-width: $extra-large-desktop) {
+            font-size: 3.6rem;
+            margin-top: 93px;
+        }
+
+        b {
+            font-weight: 300;
+            position: relative;
+        }
+
+        b::before {
+            content: "";
+            width: 100%;
+            margin: 0px auto 0;
+            height: 1px;
+            background: #4c5172;
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+
+            @media screen and (min-width: $extra-large-desktop) {
+                margin-top: 14px;
+            }
+        }
+    }
+}
+
+.entry-text::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #4c5172;
+    display: block;
+    transform: rotate(45deg);
+    margin: 35px auto;
+
+    @media screen and (min-width: $medium) {
+        margin: 50px auto;
+    }
+
+    @media screen and (min-width: $extra-large-desktop) {
+        margin: 77px auto 115px;
+    }
+}
+
+.header-main.header-main--page {
+    .container {
+        //border-bottom: 1px solid #979aad;
+   
+    }
+}
+
+.header-main.top-nav-collapse {
+    @media screen and (min-width: $medium) {
+        border-bottom: 1px solid #979aad;
+
+        .container {
+            height: 60px;
+            border-bottom: 0;
+        }
+
+        .container-line::before {
+            display: none;
+        }
+
+        .logo-main {
+            img {
+                width: 90px;
+            }
+        }
+    }
+}

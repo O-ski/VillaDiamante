@@ -1,0 +1,37 @@
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+
+    label {
+        font-size: 1.1rem;
+        color: #4c5172;
+        background: #fff;
+        padding: 0px 12px;
+        position: absolute;
+        font-weight: 400;
+        left: 10px;
+        top: -7px;
+        z-index: 1;
+    }
+
+    .form-control {
+        border-radius: 6px;
+        border: 1px solid #a4a6b7;
+        height: 40px;
+        padding: 0 21px;
+        box-shadow: 0;
+    }
+    .form-control.text-error{
+         border: 1px solid red;
+    }
+
+    textarea.form-control {
+        height: 150px;
+        resize: none;
+        padding: 22px;
+    }
+
+    .text-error {
+        color: red;
+    }
+}

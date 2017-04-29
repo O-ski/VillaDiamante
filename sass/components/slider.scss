@@ -1,0 +1,22 @@
+.entry-slider {
+    .item {
+        height: 300px;
+        background-size: cover;
+
+        @media screen and (min-width: $medium) {
+            height: 400px;
+        }
+
+        @media screen and (min-width: $extra-large) {
+            height: 500px;
+        }
+
+        @media screen and (min-width: $extra-large-desktop) {
+            height: 700px;
+        }
+
+        @media screen and (min-width: $extra-large-desktop-2) {
+            height: 798px;
+        }
+    }
+}

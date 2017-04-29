@@ -1,0 +1,115 @@
+.features-content::before{
+	@include mark;
+	top:-32px;
+	  @media screen and (min-width: $medium) {
+	  	top:-79px;
+	  }
+}
+.features-content::after{
+	@include mark;
+	bottom:-32px;
+	  @media screen and (min-width: $medium) {
+	  	bottom:-79px;
+	  }
+}
+.features-content{
+
+	position: relative;
+	&__list{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+  @media screen and (min-width: $large) {
+						display: flex;
+						justify-content: space-between;
+						flex-wrap:wrap;
+			   }
+		.features-box{
+			display: block;
+			position: relative;
+			margin-bottom: 30px;
+			  @media screen and (min-width: $medium) {
+			  	display: flex;
+			  	align-items:center;
+			  	
+			  	margin-bottom: 50px;
+			  	padding-left: 110px;
+
+			  }
+			   @media screen and (min-width: $large) {
+						width: 46%;
+			   }
+			    @media screen and (min-width: $extra-large-desktop) {
+						width: 46%;
+			   }
+			    @media screen and (min-width: $extra-large-desktop-2) {
+						width: 40%;
+			   }
+			       @media screen and (min-width: $extra-large-desktop-3) {
+						width: 45%;
+			   }
+
+			&__img{
+				height: 88px;
+				margin-bottom: 30px;
+				display: flex;
+				align-items:center;
+				  @media screen and (min-width: $medium) {
+			  	margin-bottom: 0;
+			  	position: absolute;
+			  	left:0;
+
+
+			  }
+			}
+			&__text{
+				text-align: center;
+				  @media screen and (min-width: $medium) {
+			  	text-align: left;
+			  	padding-left: 30px;
+
+			  }
+
+				.heading{
+					margin: 0 0 0;
+					font-family: $font-2;
+					font-size: 2.4rem;
+					line-height: 2.5rem;
+					 @media screen and (min-width: $large) {
+						font-size: 3rem;
+					line-height: 3.2rem;
+			   }
+
+				}
+				p{
+					margin-top: 15px;
+				}
+			}
+		}
+		
+	}
+}
+
+
+
+.map-location{
+	height:250px;
+	margin-top: 30px;
+	position: relative;
+	 @media screen and (min-width: $medium) {
+	height:350px;
+	margin-top: 93px;
+	 }
+	 @media screen and (min-width: $large) {
+	height:450px;
+	margin-top: 193px;
+	 }
+	  @media screen and (min-width: $extra-large-desktop) {
+	 		height:550px;
+	//margin-top: 60px;
+	 }
+	 @media screen and (min-width: $extra-large-desktop-2) {
+	 		height:720px;
+	//margin-top: 130px;
+	 }
+}

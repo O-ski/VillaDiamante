@@ -1,0 +1,126 @@
+button {
+    padding: 0;
+    background: none;
+    border: 0;
+}
+
+.open-menu {
+    background: none;
+    float: none;
+    position: relative;
+    border: 0;
+    padding-right: 48px;
+
+    span {
+        background: #4c5172;
+        display: block;
+        margin-top: 4px;
+        height: 1px;
+        width: 23px;
+    }
+
+    span:first-of-type {
+        margin-top: 0;
+    }
+
+    .text {
+        background: none;
+        margin-top: 0;
+        text-transform: uppercase;
+        color: #4c5172;
+        font-size: 1.4rem;
+        font-family: "Roboto",sans-serif;
+        position: absolute;
+        right: 17px;
+        top: -3px;
+    }
+
+    &:hover {
+        .text {
+            color: #000;
+        }
+    }
+}
+
+.close-menu {
+    border: 0;
+    background: none;
+    float: none;
+    text-transform: uppercase;
+
+    span::before {
+        font-size: 1.3rem;
+        margin-right: 10px;
+    }
+}
+
+.main-link {
+    color: #9c4a32;
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+
+    &:hover {
+        color: #4c5172;
+    }
+}
+
+.main-link::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #9c4a32;
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+    display: inline-block;
+}
+.main-link.main-link--file{
+        display: flex;
+    align-items: center;
+    margin: 19px auto;
+    span::before{
+        margin-right: 10px;
+        font-size: 2.5rem;
+    }
+}
+.main-link.main-link--file::before{
+display: none;
+
+}
+.main-link.main-link--large {
+    @media screen and (min-width: $extra-large-desktop) {
+        font-size: 2.4rem;
+    }
+
+    span::before {
+        font-size: 1.4rem;
+        margin-right: 10px;
+        font-weight: 700;
+
+        @media screen and (min-width: $extra-large-desktop) {
+            font-size: 2.1rem;
+        }
+    }
+}
+
+.main-link.main-link--large::before {
+    display: none;
+}
+
+.main-button {
+    border-radius: 6px;
+    background: #4c5172;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 10px 15px;
+  
+    display: inline-block;
+
+
+    &:hover {
+        background: #5e6593;
+    }
+}

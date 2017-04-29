@@ -1,0 +1,161 @@
+/* sticky footer */
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.site-content {
+    flex: 1;
+}
+
+/**/
+
+.container {
+    
+
+    @media screen and (min-width: $extra-large-desktop) {
+        width: calc(100% - 100px);
+        max-width: 1780px;
+    }
+
+
+}
+.contaier-small{
+	   @media screen and (min-width: $extra-large-desktop) {
+       
+        max-width: 1350px;
+    }
+}
+.contaier-small-more{
+	   @media screen and (min-width: $extra-large-desktop) {
+       
+        max-width: 960px;
+    }
+}
+.add-gutter-right{
+	 @media screen and (min-width: $extra-large) {
+    		padding-right: 30px;
+    	}
+    	 @media screen and (min-width: $extra-large-desktop-3) {
+    		padding-right: 50px;
+    	}
+}
+.add-gutter-left{
+	 @media screen and (min-width: $extra-large) {
+    		padding-left: 30px;
+    	}
+    	 @media screen and (min-width: $extra-large-desktop-3) {
+    		padding-left: 50px;
+    	}
+}
+
+.gutter-10-r{
+	 @media screen and (min-width: $extra-large-desktop-2) {
+	padding-right: 10%;
+}
+
+}
+.gutter-10-l{
+	 @media screen and (min-width: $extra-large-desktop-2) {
+	padding-left: 10%;
+}
+
+}
+.gutter-5{
+	 @media screen and (min-width: $extra-large-desktop-2) {
+	padding: 0 5%;
+}
+
+}
+
+/*
+.container{
+	@media screen and (min-width: $extra-large-desktop) {
+		max-width: 1300px;
+		width: 100%;
+	}
+	@media screen and (min-width: $extra-large-desktop-2) {
+		max-width: 1777px;
+		width: 100%;
+	}
+}
+.add-gutter-right{
+	 @media screen and (min-width: $extra-large-desktop) {
+    		padding-right: 14px;
+    	}
+}
+.add-gutter-left{
+	 @media screen and (min-width: $extra-large-desktop) {
+    		padding-left: 155px;
+    	}
+}
+
+.gutter-10-r{
+	 @media screen and (min-width: $extra-large-desktop-2) {
+	padding-right: 10%;
+}
+
+}
+.gutter-10-l{
+	 @media screen and (min-width: $extra-large-desktop-2) {
+	padding-left: 10%;
+}
+
+}
+.gutter-5{
+	 @media screen and (min-width: $extra-large-desktop-2) {
+	padding: 0 5%;
+}
+
+}
+
+
+
+.page-header{
+	position: relative;
+	border:0;
+	margin:20px 0;
+	text-align: center;
+   @media screen and (min-width: $medium) {
+margin-bottom: 50px;
+margin-top: 35px;
+
+   }
+    @media screen and (min-width: $extra-large-desktop-2) {
+      	margin-top: 50px;
+      }
+	&__title{
+		margin: 0 0 15px;
+		    font-family: $font-2;
+    font-size: 3.5rem;
+    line-height: 3.4rem;
+    text-align: center;
+      @media screen and (min-width: $medium) {
+      	font-size: 4.5rem;
+      	    line-height: 4.5rem;
+      }
+        @media screen and (min-width: $extra-large-desktop-2) {
+      	font-size: 5rem;
+      	margin-bottom: 30px;
+      	    line-height: 6rem;
+      }
+	}
+}
+
+.page-header::after{
+	content:"";
+	width: 10px;
+	height:10px;
+	background:#4c5172;
+	display:block;
+	transform:rotate(45deg);
+	margin:0 auto;
+	position: absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	}
+
+*/

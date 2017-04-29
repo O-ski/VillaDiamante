@@ -1,0 +1,91 @@
+.single-post {
+    img {
+        margin: 30px auto;
+    }
+    ul{
+    	li{
+    		    font-size: 1.6rem;
+    font-weight: 300;
+  
+    line-height: 2.8rem;
+     @media screen and (min-width: 48em) {
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+     }
+    	}
+    }
+
+    &__gallery {
+        margin-top: 30px;
+        text-align: center;
+
+        .header-page::after {
+            display: none;
+        }
+
+        &__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+
+            li {
+                display: block;
+
+                @media screen and (min-width: $extra-small) {
+                    display: inline-block;
+                    width: 45.5%;
+                    margin-right: 15px;
+                }
+                 @media screen and (min-width: $large) {
+                 	width:30%;
+                 }
+                  @media screen and (min-width: $extra-large-desktop-3) {
+                    width:24.1%;
+                }
+
+                a {
+                    display: block;
+                    height: 200px;
+                    margin-bottom: 15px;
+                    position: relative;
+
+                    @media screen and (min-width: $medium) {
+                        height: 240px;
+                    }
+                
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+
+            li:nth-child(2n) {
+                @media screen and (min-width: $extra-small) {
+                    margin-right: 0;
+                }
+            }
+             li:nth-child(2n) {
+                @media screen and (min-width: $large) {
+                    margin-right: 15px;
+                }
+            }
+             li:nth-child(3n) {
+                @media screen and (min-width: $large) {
+                    margin-right: 0;
+                }
+            }
+             li:nth-child(3n) {
+                @media screen and (min-width: $extra-large-desktop-3) {
+                    margin-right: 15px;
+                }
+            }
+             li:nth-child(4n) {
+                @media screen and (min-width: $extra-large-desktop-3) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
