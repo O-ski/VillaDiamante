@@ -68,7 +68,7 @@ button {
 
 .main-link::before {
     content: "";
-    width: 20px;
+    width: 31px;
     height: 1px;
     background: #9c4a32;
     margin-right: 10px;
@@ -76,19 +76,22 @@ button {
     top: -2px;
     display: inline-block;
 }
-.main-link.main-link--file{
-        display: flex;
+
+.main-link.main-link--file {
+    display: flex;
     align-items: center;
     margin: 19px auto;
-    span::before{
+
+    span::before {
         margin-right: 10px;
         font-size: 2.5rem;
     }
 }
-.main-link.main-link--file::before{
-display: none;
 
+.main-link.main-link--file::before {
+    display: none;
 }
+
 .main-link.main-link--large {
     @media screen and (min-width: $extra-large-desktop) {
         font-size: 2.4rem;
@@ -115,10 +118,8 @@ display: none;
     color: #fff;
     font-size: 1.6rem;
     font-weight: 300;
-    padding: 10px 15px;
-  
+    padding: 11px 47px;
     display: inline-block;
-
 
     &:hover {
         background: #5e6593;

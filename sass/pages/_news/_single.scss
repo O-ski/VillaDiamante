@@ -2,17 +2,18 @@
     img {
         margin: 30px auto;
     }
-    ul{
-    	li{
-    		    font-size: 1.6rem;
-    font-weight: 300;
-  
-    line-height: 2.8rem;
-     @media screen and (min-width: 48em) {
-        font-size: 1.8rem;
-        line-height: 3.6rem;
-     }
-    	}
+
+    ul {
+        li {
+            font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 2.8rem;
+
+            @media screen and (min-width: 48em) {
+                font-size: 1.8rem;
+                line-height: 3.6rem;
+            }
+        }
     }
 
     &__gallery {
@@ -37,11 +38,13 @@
                     width: 45.5%;
                     margin-right: 15px;
                 }
-                 @media screen and (min-width: $large) {
-                 	width:30%;
-                 }
-                  @media screen and (min-width: $extra-large-desktop-3) {
-                    width:24.1%;
+
+                @media screen and (min-width: $large) {
+                    width: 30%;
+                }
+
+                @media screen and (min-width: $extra-large-desktop-3) {
+                    width: 23.1%;
                 }
 
                 a {
@@ -53,7 +56,6 @@
                     @media screen and (min-width: $medium) {
                         height: 240px;
                     }
-                
 
                     &:hover {
                         opacity: 0.9;
@@ -66,26 +68,41 @@
                     margin-right: 0;
                 }
             }
-             li:nth-child(2n) {
+
+            li:nth-child(2n) {
                 @media screen and (min-width: $large) {
                     margin-right: 15px;
                 }
             }
-             li:nth-child(3n) {
+
+            li:nth-child(3n) {
                 @media screen and (min-width: $large) {
                     margin-right: 0;
                 }
             }
-             li:nth-child(3n) {
+
+            li:nth-child(3n) {
                 @media screen and (min-width: $extra-large-desktop-3) {
                     margin-right: 15px;
                 }
             }
-             li:nth-child(4n) {
+
+            li:nth-child(4n) {
                 @media screen and (min-width: $extra-large-desktop-3) {
                     margin-right: 0px;
                 }
             }
         }
+    }
+}
+
+.mark.mark--custom {
+    @include mark;
+
+    margin: 41px auto 0;
+    position: relative;
+
+    @media screen and (min-width: $large) {
+        margin: 41px auto 14px;
     }
 }
