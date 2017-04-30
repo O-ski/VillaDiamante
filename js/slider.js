@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".entry-slider").owlCarousel({items:1,singleItem:!0,stagePadding:0,smartSpeed:450,loop:!0,responsiveRefreshRate:100,responsiveClass:!0,responsive:{0:{nav:!1},1260:{nav:!1}},autoplay:!0,dots:!0,pagination:!0,navText:["<i class='flaticon-right-arrow'></i>","<i class='flaticon-left-arrow'></i>"]})});
