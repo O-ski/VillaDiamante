@@ -14,6 +14,9 @@
 
 .content-form {
 	 margin-top: 30px;
+	  @media screen and (min-width: $medium) {
+	  	margin-top: 0;
+	  }
     .content-heading {
         @media screen and (min-width: $large) {
             margin-bottom: 40px;
@@ -175,4 +178,13 @@
 
         //margin-top: 130px;
     }
+}
+ @media screen and (max-width: 767px) {
+.row-flex{
+	display: flex;
+	flex-direction:column;
+	.order{
+		order:1;
+	}
+}
 }
