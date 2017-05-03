@@ -3,14 +3,20 @@
     background: #fff;
     box-shadow: 3px 0px 5px 1px rgba(0, 0, 0, 0.18);
     position: fixed;
-    padding: 28px 80px;
+    padding: 20px 80px;
     overflow-y: auto;
-    height: 80vh;
-    top: 50px;
+    height: 100vh;
+    top: 0px;
     right: -1500px;
     transition: all 500ms ease-in-out;
     z-index: 10000;
-
+    width: calc(100% - 5%);
+@media screen and (min-width: $extra-large) {
+	width: calc(100% - 10%);
+}
+@media screen and (min-width: $extra-large-desktop-3) {
+	width: calc(100% - 20%);
+}
     &__header {
         //display: flex;
 
@@ -22,7 +28,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            min-height: 100px;
+            min-height: 90px;
         }
     }
 
@@ -113,7 +119,7 @@
                 font-size: 1.4rem;
                 font-weight: 300;
                 color: #4c5172;
-                line-height: 3rem;
+                line-height: 2.5rem;
                 border: 0;
 
                 @media screen and (min-width: $large) {

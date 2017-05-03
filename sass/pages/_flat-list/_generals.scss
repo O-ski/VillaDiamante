@@ -147,6 +147,15 @@
                     }
                 }
             }
+            &:hover{
+                 cursor:pointer;
+                td{
+                    .title{
+                        text-decoration: underline;
+
+                    }
+                }
+            }
         }
     }
 
@@ -190,12 +199,12 @@
     }
 
     .img-content {
-      height:196px;
-          @media screen and (min-width: $medium) {
- height: 60px;
-          }
-         
-      
+        height: 196px;
+
+        @media screen and (min-width: $medium) {
+            height: 60px;
+        }
+
         margin-top: 7px;
 
         @media screen and (min-width: $extra-large-desktop-3) {
